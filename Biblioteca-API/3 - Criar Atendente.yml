@@ -1,0 +1,27 @@
+info:
+  name: 3 - Criar Atendente
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/v1/user
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Atendente Teste",
+        "username": "atendente1",
+        "email": "atendente@biblioteca.com",
+        "password": "123456",
+        "isAdmin": false
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJlbWFpbCI6ImFkbWluQGJpYmxpb3RlY2EuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzk1MjAzNjU3LCJleHAiOjE3OTUyMDQ1NTd9.tM_IcSVLRSstyILCA40eu7v3R6dDjt-mWejIHDODyh8
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

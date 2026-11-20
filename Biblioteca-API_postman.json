@@ -1,0 +1,46 @@
+{
+  "version": "1",
+  "name": "Biblioteca-API",
+  "items": [],
+  "environments": [],
+  "runtimeVariables": {},
+  "brunoConfig": {
+    "opencollection": "1.0.0",
+    "name": "Biblioteca-API",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "proxy": {
+      "inherit": true,
+      "config": {
+        "protocol": "http",
+        "hostname": "",
+        "port": "",
+        "auth": {
+          "username": "",
+          "password": ""
+        },
+        "bypassProxy": ""
+      }
+    }
+  },
+  "securityConfig": {},
+  "settingsSelectedTab": "overview",
+  "folderLevelSettingsSelectedTab": {},
+  "allTags": [],
+  "format": "yml",
+  "importedAt": 1795203094691,
+  "lastAction": null,
+  "root": {
+    "meta": null,
+    "request": null,
+    "docs": null
+  },
+  "isLoading": false,
+  "globalEnvironmentVariables": {},
+  "globalEnvSecrets": [],
+  "exportedAt": "2026-11-20T19:31:53.001Z",
+  "exportedUsing": "Bruno VS Code Extension"
+}

@@ -1,0 +1,21 @@
+info:
+  name: 5 - Refresh e Deteccao de Roubo
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/v1/auth/refresh
+  body:
+    type: json
+    data: |-
+      {
+        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwianRpIjoiNjg0MDQyMTYtOTgzZC00NGY3LTk2ZjYtMzZmZDgwMzc1YTM1IiwiaWF0IjoxNzk1MjA0NjkzLCJleHAiOjE3OTU4MDk0OTN9.upy25CCIjrPjkolMDpD7DWtWYtx67beKh4rdTOsNFfY"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
