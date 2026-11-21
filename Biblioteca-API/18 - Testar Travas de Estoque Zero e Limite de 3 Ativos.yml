@@ -1,0 +1,21 @@
+info:
+  name: 18 - Testar Travas de Estoque Zero e Limite de 3 Ativos
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/v1/loans
+  body:
+    type: json
+    data: |-
+      {
+       "bookId": 4, "readerId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

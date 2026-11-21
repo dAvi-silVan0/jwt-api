@@ -1,0 +1,23 @@
+info:
+  name: 9 - Criar Autor 2
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/v1/authors
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Professor Hudson",
+        "nationality": "Brasileiro",
+        "birthDate": "1917-12-16"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

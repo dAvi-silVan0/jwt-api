@@ -1,0 +1,22 @@
+info:
+  name: 7 - Criar Categoria
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/v1/categories
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Ficção Científica",
+        "description": "Obras clássicas e modernas de ficção científica"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: 11 - Buscar Livros com Filtros
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:3000/v1/books?title=Fund&available=true
+  params:
+    - name: title
+      value: Fund
+      type: query
+    - name: available
+      value: "true"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

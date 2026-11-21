@@ -1,0 +1,24 @@
+info:
+  name: 13 - Bloqueio 403 Atendente em Categoria
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/v1/categories
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Terror",
+        "description": "Tentativa sem permissão"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IkF0ZW5kZW50ZSBUZXN0ZSIsImVtYWlsIjoiYXRlbmRlbnRlQGJpYmxpb3RlY2EuY29tIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTc5NTI3MDUzNywiZXhwIjoxNzk1MjcxNDM3fQ.CCNJ4YOPoXeyeOeXzlXYsw8V_UuNh8BJgdG8l5y629w
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

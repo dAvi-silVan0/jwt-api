@@ -1,0 +1,22 @@
+info:
+  name: 16 - Registrar Empréstimo
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/v1/loans
+  body:
+    type: json
+    data: |-
+      {
+        "bookId": 1,
+        "readerId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: 23 - Dashboard Gerencial (Admin)
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:3000/v1/reports/dashboard
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

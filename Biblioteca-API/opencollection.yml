@@ -2,6 +2,22 @@ opencollection: 1.0.0
 
 info:
   name: Biblioteca-API
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJlbWFpbCI6ImFkbWluQGJpYmxpb3RlY2EuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzk1Mjg3OTY4LCJleHAiOjE3OTUyODg4Njh9.ojWLVTOXrYFLe0UswuRton03lEwJ0lYWYyzqcYDv0Vw
 bundled: false
 extensions:
   bruno:
